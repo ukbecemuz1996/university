@@ -2602,7 +2602,13 @@ jQuery(document).ready(function() {
     if(nice_Select.length){
       nice_Select.niceSelect();
     }
+
+
+    
 	
 });
+
+
+
 
 
