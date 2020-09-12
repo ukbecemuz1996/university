@@ -642,3 +642,17 @@ div.search-box .search-form a i{
   font-size: 16px;
   font-weight: 700;
 }
+
+
+a.content_link, a:hover.content_link {
+  color:#000!important;
+}
+
+a.content_link {
+  width: 200px!important;
+}
+
+.image_wrapper img{
+  width: 100px!important;
+  height: 100px;
+}
