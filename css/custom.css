@@ -1,5 +1,6 @@
 #Wrapper {
 	background:rgba(255,255,255,0.75);
+  height: 100%!important;
 }
 #Header_wrapper {
 	background: none;
@@ -97,7 +98,7 @@ a.button .buttonIconColorRed i{
 }
 
 body { 
-background: linear-gradient(321deg, rgba(255,0,0,1) 23%, rgba(39,186,176,1) 82%);
+  background: linear-gradient(321deg, rgba(255,0,0,1) 23%, rgba(39,186,176,1) 82%);
 }
 
 
@@ -648,7 +649,7 @@ a.content_link, a:hover.content_link {
 }
 
 a.content_link {
-  width: 200px!important;
+  width: 100px!important;
 }
 
 .image_wrapper img{
@@ -689,6 +690,9 @@ div.universities {
 div.universitiesFilter {
   font-family: Changa;
 }
+div#universityDetail {
+  font-family: Changa;
+}
 
 div.universities .desc_wrapper {
   color: #000;
@@ -700,4 +704,37 @@ div.universities .icon_box:hover .desc_wrapper {
 
 div.universities div.filteredColumn {
   margin-bottom: 40px;
+}
+
+div.modal-lg {
+  max-width: 1200px;
+}
+
+.accordion .question .title {
+  text-align: center;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  float: right;
+}
+
+.universityDetailIcons i {
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.universityDetailIcons i:hover {
+  color: #2991d6;
+}
+
+.buildings {
+  font-size: 15px;
+}
+
+.buildings i {
+  font-size: 15px;
+}
+
+table tr:hover td {
+  color: #fff;
 }

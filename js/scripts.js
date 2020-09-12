@@ -2619,6 +2619,13 @@ jQuery(document).ready(function() {
     		}
     	}
     });
+
+    jQuery('div.universities div.row div.filteredColumn div.icon_box').on('click',function(){
+    	jQuery('#universityDetail').modal();
+    });
+
+    jQuery(".jq-tabs").tabs();
+
 	
 });
 
