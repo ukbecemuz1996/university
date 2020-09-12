@@ -697,3 +697,7 @@ div.universities .desc_wrapper {
 div.universities .icon_box:hover .desc_wrapper {
   color: blue;
 }
+
+div.universities div.filteredColumn {
+  margin-bottom: 40px;
+}

@@ -117,25 +117,23 @@
 
                 <div class="container-fluid greyBackground myPadding10 universitiesFilter" dir="rtl">
                     <div class="row paddingLeftRight">
-                        <a class="button button_black  button_size_2 button_js  margin5" href="#">   
+                        <a onclick="filterUniversity('public')" class="button button_black  button_size_2 button_js  margin5" data-filter="public" href="#">  
                             <span class="button_label">الجامعات الحكومية</span>
                         </a>
-                        <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                        <a onclick="filterUniversity('private')" class="button button_black button_size_2 button_js  margin5" data-filter="private" href="#">   
                             <span class="button_label">الجامعات الخاصة</span>
                         </a>
-                        <a class="button activeFilter button_size_2 button_js  margin5" href="#">   
+                        <a onclick="filterUniversity('yosorsat')" class="button button_black button_size_2 button_js  margin5" data-filter="yosorsat" href="#">   
                             <span class="button_label">جامعة لاتقبل الا بيوس او سات</span>
                         </a>
-                        <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                        <a onclick="filterUniversity('noyosorsat')" class="button button_black button_size_2 button_js  margin5" data-filter="noyosorsat" href="#">   
                             <span class="button_label">جامعة تقبل بدون يوس او سات</span>
                         </a>
-                        <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                        <a onclick="filterUniversity('registerabile')" class="button button_black button_size_2 button_js  margin5" data-filter="registerabile" href="#">   
                             <span class="button_label">الجامعات المتاح التسجيل عليها</span>
                         </a>
                     </div>
                     
-                    
-
                 </div>
 
                 <div style="width: 100%;height: 20px;">
@@ -143,7 +141,7 @@
                 </div>
                 <div class="container-fluid universities" dir="rtl">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="filteredColumn col-lg-3" data-filtered="public all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -155,7 +153,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="filteredColumn col-lg-3" data-filtered="public all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -167,7 +165,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="filteredColumn col-lg-3" data-filtered="public all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -179,7 +177,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="filteredColumn col-lg-3 " data-filtered="private all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -191,9 +189,8 @@
                                 </a>
                             </div> 
                         </div>
-                    </div><br><br><br>
-                    <div class="row">
-                        <div class="col-lg-3">
+                    
+                        <div class="filteredColumn col-lg-3" data-filtered="yosorsat noyosorsat all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -205,7 +202,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="filteredColumn col-lg-3" data-filtered="yosorsat all">
                             <div class="icon_box icon_position_top has_border">
                                 <a href="#">
                                     <div class="image_wrapper">
@@ -217,9 +214,81 @@
                                 </a>
                             </div> 
                         </div>
-
+                        <div class="filteredColumn col-lg-3" data-filtered="public noyosorsat all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/bilkent.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة بلكنت</h4>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="filteredColumn col-lg-3 " data-filtered="private all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/sakarya.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة سكاريا</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="filteredColumn col-lg-3 " data-filtered="private all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/mku.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة مصطفى كمال اتاتورك</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="filteredColumn col-lg-3 " data-filtered="registerabile all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/selcuk.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة سلجوق</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="filteredColumn col-lg-3 " data-filtered="public all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/bogazici.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة بوغاز اتشي</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="filteredColumn col-lg-3 " data-filtered="registerabile all">
+                            <div class="icon_box icon_position_top has_border">
+                                <a href="#">
+                                    <div class="image_wrapper">
+                                        <img src="images/istanbul.png" class="scale-with-grid" alt="img">
+                                    </div>
+                                    <div class="desc_wrapper">
+                                        <h4 class="title">جامعة اسطنبول</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> 
                     </div>
                 </div>
+                <div style="width: 100%;height: 100px;">
                     
                 
             </header>

@@ -2603,10 +2603,47 @@ jQuery(document).ready(function() {
       nice_Select.niceSelect();
     }
 
+    filterUniversity('all');
 
-    
+    jQuery('div.universitiesFilter div.row a.button').on('click',function(){
+    	if (!jQuery(this).hasClass('activeFilter')) {
+    		if(!jQuery('div.universitiesFilter div.row a.activeFilter').length){
+    			jQuery(this).removeClass('button_black');
+    			jQuery(this).addClass('activeFilter');
+    		} else {
+    			var tempElement = jQuery('div.universitiesFilter div.row a.activeFilter');
+    			tempElement.removeClass('activeFilter');
+    			tempElement.addClass('button_black')
+    			jQuery(this).removeClass('button_black');
+    			jQuery(this).addClass('activeFilter');
+    		}
+    	}
+    });
 	
 });
+
+function filterUniversity(filter){
+
+	jQuery('div.universities div.row div.filteredColumn').filter(function(){
+		var filtered = jQuery(this).attr('data-filtered').split(' ');
+		console.log(filtered);
+		var result=false;
+		for (var i = 0; i < filtered.length; i++) {
+			if (filtered[i]==filter) {
+				result=true;
+				break;
+			}
+		}
+
+		if (result) {
+			jQuery(this).css('display','block');
+		}
+		else {
+			jQuery(this).css('display','none');
+		}
+	});
+}
+
 
 
 
