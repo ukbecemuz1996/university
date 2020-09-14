@@ -129,6 +129,11 @@ body {
 	padding-left: 10px;
 }
 
+.paddingLeftRight15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .paddingRight {
 	padding-right: 10px;
 }
@@ -261,12 +266,6 @@ i.iconGreen {
 }
 
 
-@media only screen and (max-width: 540px) {
-	.select2-container {
-		padding-bottom: 5px;
-	}
-}
-
 
 .glassWhite {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);   
@@ -294,16 +293,6 @@ i.iconGreen {
 div.socialIcons{
 	width: fit-content;
 	border-radius: 50px;
-}
-
-.select2-container .select2-selection--single{
-	height: 47px !important;
-}
-
-.select2-container--default .selection .select2-selection--single {
-	display: flex;
-    align-items: center;
-    /*justify-content: center;*/
 }
 
 
@@ -738,3 +727,56 @@ div.modal-lg {
 table tr:hover td {
   color: #fff;
 }
+
+div.feautres div.row div.featureColumn {
+  margin-bottom: 100px;
+}
+
+.changaFamily {
+  font-family: Changa;
+}
+
+div.featureColumn div.icon_box a div.icon_wrapper, div.featureColumn div.icon_box a div.desc_wrapper {
+  color: #000;
+} 
+
+div.featureColumn div.icon_box:hover a div.icon_wrapper:before {
+  background-color: #000;
+}
+div.featureColumn div.icon_box:hover a div.icon_wrapper {
+  color: #fff;
+}
+
+div.contactForm input {
+  width: inherit;
+  margin-right: 0;
+}
+
+div.contactForm select {
+  width: inherit;
+}
+
+div.contactForm input::placeholder {
+  text-align: right;
+  font-size: 20px;
+  font-family: Changa
+}
+
+#universities_name_parent {
+  width: inherit;
+  text-align: right;
+  direction: rtl;
+  position: relative;
+  font-size: 20px; 
+}
+#universities_name_parent .select2-container--open + .select2-container--open {
+  left: auto;
+  right: 0;
+  width: 100%;
+
+}
+
+input#contact_submit {
+  background-color: #000;
+  font-family: Changa;
+}    

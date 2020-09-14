@@ -2626,6 +2626,17 @@ jQuery(document).ready(function() {
 
     jQuery(".jq-tabs").tabs();
 
+    jQuery('#universities_name').select2({
+    	dir: "rtl",
+	    dropdownAutoWidth: true,
+	    dropdownParent: jQuery('#universities_name_parent')
+    });
+    jQuery('#city').select2({
+    	dir: "rtl",
+	    dropdownAutoWidth: true,
+	    dropdownParent: jQuery('#universities_name_parent')
+    });
+
 	
 });
 
