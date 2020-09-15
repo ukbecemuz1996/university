@@ -641,7 +641,7 @@ a.content_link {
   width: 100px!important;
 }
 
-.image_wrapper img{
+div.universities div.row div.filteredColumn div.icon_box a div.image_wrapper img{
   width: 100px!important;
   height: 100px;
 }
@@ -779,4 +779,73 @@ div.contactForm input::placeholder {
 input#contact_submit {
   background-color: #000;
   font-family: Changa;
-}    
+}
+
+
+div.about_us  div.row div.about_us_column {
+  margin-bottom: 100px;
+}
+
+
+div.about_us div.row div.logo img {
+  width: 300px;
+}
+
+
+.justfiyText {
+  text-align: justify;
+}
+
+.scaleImage {
+  max-width: 100%;
+}
+
+.get_in_touch {
+  background-color: #000!important;
+  border-radius: 20px;
+}
+
+.get_in_touch ul li .icon {
+  color: #fff;
+}
+
+
+
+
+div.team_wrapper hr {
+  width: 100%!important;
+}
+
+div.online a div.icon_wrapper {
+  color: white;
+  background-color: green;
+  border-color: green;
+}
+
+div.online a div.icon_wrapper:before {
+  border-style: none;
+}
+
+div.about_us_infobox_wrapper div.infobox {
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.hr_color ,.hr_color hr{
+  color: #000!important;
+  background: #000!important;
+}
+
+div.about_us_form input {
+  width: inherit;
+  font-family: Changa;
+  font-size: 20px;
+  text-align: right
+}
+
+div.about_us_form textarea {
+  width: inherit;
+  font-family: Changa;
+  font-size: 20px;
+  text-align: right
+}
