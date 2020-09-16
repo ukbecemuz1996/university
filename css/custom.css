@@ -18,8 +18,14 @@
 	margin-top: 20px;
 }
 
+.paddingTopBottom20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 .bigText {
-	font-family: Changa;
+	font-family: Cairo;
 	font-weight: 700;
 	font-size: 20px;
 }
@@ -210,6 +216,10 @@ a.socialIcon:hover {
 	text-decoration-line: none;
 }
 
+div.socialIcons img {
+  width: 40px;
+}
+
 i.iconBlue {
 	color: #2587e8;
 }
@@ -246,6 +256,8 @@ i.iconGreen {
 	    z-index: 1;
 		background:inherit;    
 		overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
 	}
 
 	.customNav .navbar-nav:before {
@@ -259,7 +271,11 @@ i.iconGreen {
 	    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
 	  	backdrop-filter: blur(20px);
 	    margin: -20px;
-	} 
+	}
+
+  .customNav .navbar-nav li {
+    margin-bottom: 20px;
+  } 
 
 
 
@@ -314,6 +330,9 @@ ol.carousel-indicators{
 /* --------------------------------------------------------------------------------------------------------- */
 
 div.search-box{
+  /*border-style:solid;
+  border-width: 5px;
+  border-color: red;*/ 
   border: 10px solid rgba(255, 255, 255, 0.16);
   display: flex;
   flex-wrap: wrap;
@@ -339,20 +358,20 @@ div.search-box {
   }
 }
 
-div.search-box .input-form{
-  width: 26%;
+div.search-box .input-form {
+  width: 100%;
   position: relative;
-  border-top-left-radius: 50px;
+  border-radius: 50px;
   overflow: hidden;
-  border-bottom-left-radius: 50px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: red; 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 div.search-box .input-form{
     width: 50%;
     margin-bottom: 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 }
 
@@ -360,8 +379,6 @@ div.search-box .input-form{
 div.search-box .input-form{
     width: 50%;
     margin-bottom: 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 }
 
@@ -369,8 +386,6 @@ div.search-box .input-form{
 div.search-box .input-form{
     width: 100%;
     margin-bottom: 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 }
 
@@ -378,19 +393,22 @@ div.search-box .input-form input {
   height: 60px;
   width: 100%;
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   padding: 9px 18px 9px 48px;
   border: none;
   border-radius: 0px;
   position: relative;
   margin-bottom: 0!important;
+  text-align: center;
+  font-family: Cairo;
 }
 
 div.search-box .input-form input::placeholder{
   color: #1D2547;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
+  font-family: Cairo;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -638,7 +656,7 @@ div.buildings a.content_link, a:hover.content_link {
 }
 
 div.buildings a.content_link {
-  width: 100px!important;
+  width: 50%!important;
 }
 
 div.universities div.row div.filteredColumn div.icon_box a div.image_wrapper img{
@@ -662,6 +680,7 @@ a.button.button_black{
 a.button.activeFilter {
   background-color: #fff;
   color: rgba(0,0,0,0.7);
+  box-shadow: 0 0 13px #fff!important;
 }
 
 .noMargin {
@@ -673,14 +692,26 @@ a.button.activeFilter {
 }
 
 div.universities {
-  font-family: Changa;
+  font-family: Cairo;
 }
 
 div.universitiesFilter {
-  font-family: Changa;
+  font-family: Cairo;
 }
+
+div.universitiesFilter div.row a.button {
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+div.universitiesFilter div.row a.button:hover {
+  box-shadow: 0 0 11px #000; 
+}
+
 div#universityDetail {
-  font-family: Changa;
+  font-family: Cairo;
 }
 
 div.universities .desc_wrapper {
@@ -693,6 +724,19 @@ div.universities .icon_box:hover .desc_wrapper {
 
 div.universities div.filteredColumn {
   margin-bottom: 40px;
+}
+
+div.universities div.filteredColumn div.icon_box {
+  
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  min-height: 300px;
+}
+
+div.universities div.filteredColumn:hover div.icon_box {
+  box-shadow: 0 0 11px grey; 
 }
 
 div.modal-lg {
@@ -733,7 +777,7 @@ div.feautres div.row div.featureColumn {
 }
 
 .changaFamily {
-  font-family: Changa;
+  font-family: Cairo;
 }
 
 div.featureColumn div.icon_box a div.icon_wrapper, div.featureColumn div.icon_box a div.desc_wrapper {
@@ -759,7 +803,7 @@ div.contactForm select {
 div.contactForm input::placeholder {
   text-align: right;
   font-size: 20px;
-  font-family: Changa
+  font-family: Cairo
 }
 
 #universities_name_parent {
@@ -778,7 +822,7 @@ div.contactForm input::placeholder {
 
 input#contact_submit {
   background-color: #000;
-  font-family: Changa;
+  font-family: Cairo;
 }
 
 
@@ -838,14 +882,14 @@ div.about_us_infobox_wrapper div.infobox {
 
 div.about_us_form input {
   width: inherit;
-  font-family: Changa;
+  font-family: Cairo;
   font-size: 20px;
   text-align: right
 }
 
 div.about_us_form textarea {
   width: inherit;
-  font-family: Changa;
+  font-family: Cairo;
   font-size: 20px;
   text-align: right
 }
@@ -854,7 +898,7 @@ div.exams_wrapper a.content_link.active_exam {
   border-style: solid;
   border-width: 2px;
   border-color: #1fd140;
-  color: #000;
+  color: #000; 
 }
 
 div.exams_wrapper a.content_link.active_exam:before, div.exams_wrapper a.content_link.active_exam:after{
@@ -868,7 +912,7 @@ div.exams_wrapper a.content_link {
   border-width: 2px;
   border-color: red;
   color: #000;
-  font-family: Changa;
+  font-family: Cairo;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -884,7 +928,7 @@ div.exams_wrapper a.content_link:before{
 
 div.exam_detail {
   background-color: #000;
-  font-family: Changa;
+  font-family: Cairo;
   text-align: justify;
   border-radius: 20px;
 }
@@ -923,4 +967,30 @@ ul.exam_universities::-webkit-scrollbar-thumb {
   background-color: #fff;    
   border-radius: 20px;      
   border: 3px solid #000;  
+}
+
+.fixedTop {
+  position: fixed;
+  top: 0;
+  z-index: 150;
+}
+
+.modal { overflow: auto !important; }
+
+div#relatedUniversityDetail div.accordion {
+  width: 100%;
+  font-family: Cairo;
+  font-size: 20px;
+}
+
+div#relatedUniversityDetail td {
+  font-size: medium;
+}
+
+div#relatedUniversityDetail td a {
+  color: #000;
+}
+
+div#relatedUniversityDetail td:hover a {
+  color: #fff;
 }

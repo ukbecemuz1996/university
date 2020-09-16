@@ -2624,6 +2624,10 @@ jQuery(document).ready(function() {
     	jQuery('#universityDetail').modal();
     });
 
+    jQuery('div.buildings a.content_link').on('click',function(){
+    	jQuery('#relatedUniversityDetail').modal();
+    });
+
     jQuery(".jq-tabs").tabs();
 
     jQuery('#universities_name').select2({
@@ -2662,6 +2666,23 @@ function filterUniversity(filter){
 	});
 }
 
+
+window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("largerNav");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("glassWhite");
+          } else {
+            header.classList.remove("glassWhite");
+          }
+        }
 
 
 
