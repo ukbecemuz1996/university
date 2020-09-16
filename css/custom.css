@@ -633,11 +633,11 @@ div.search-box .search-form a i{
 }
 
 
-a.content_link, a:hover.content_link {
+div.buildings a.content_link, a:hover.content_link {
   color:#000!important;
 }
 
-a.content_link {
+div.buildings a.content_link {
   width: 100px!important;
 }
 
@@ -848,4 +848,79 @@ div.about_us_form textarea {
   font-family: Changa;
   font-size: 20px;
   text-align: right
+}
+
+div.exams_wrapper a.content_link.active_exam {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1fd140;
+  color: #000;
+}
+
+div.exams_wrapper a.content_link.active_exam:before, div.exams_wrapper a.content_link.active_exam:after{
+  opacity: 1;
+}
+
+div.exams_wrapper a.content_link {
+  width: 120px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  color: #000;
+  font-family: Changa;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+div.exams_wrapper a.content_link:after{
+  border-color: #1fd140;
+}
+
+div.exams_wrapper a.content_link:before{
+  border-bottom-color: #1fd140;
+}
+
+div.exam_detail {
+  background-color: #000;
+  font-family: Changa;
+  text-align: justify;
+  border-radius: 20px;
+}
+
+ul.exam_universities {
+  max-height: 400px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+ul.exam_universities img {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100px;
+}
+
+ul.exam_universities li {
+  margin-bottom: 5px;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+ul.exam_universities::-webkit-scrollbar {
+  width: 12px;               
+}
+ul.exam_universities::-webkit-scrollbar-track {
+  background: #000;        
+}
+ul.exam_universities::-webkit-scrollbar-thumb {
+  background-color: #fff;    
+  border-radius: 20px;      
+  border: 3px solid #000;  
 }
