@@ -2624,7 +2624,7 @@ jQuery(document).ready(function() {
     	jQuery('#universityDetail').modal();
     });
 
-    jQuery('div.buildings a.content_link').on('click',function(){
+    jQuery('div.buildings a').on('click',function(){
     	jQuery('#relatedUniversityDetail').modal();
     });
 

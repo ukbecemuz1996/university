@@ -651,12 +651,21 @@ div.search-box .search-form a i{
 }
 
 
-div.buildings a.content_link, a:hover.content_link {
-  color:#000!important;
+div.buildings a {
+  width: inherit;
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
-div.buildings a.content_link {
-  width: 50%!important;
+div.buildings a:hover {
+  box-shadow: 0 0 11px #000;
+}
+
+div.buildings a .button_label{
+  text-align: center;
+  float: none;
 }
 
 div.universities div.row div.filteredColumn div.icon_box a div.image_wrapper img{
@@ -993,4 +1002,18 @@ div#relatedUniversityDetail td a {
 
 div#relatedUniversityDetail td:hover a {
   color: #fff;
+}
+
+.displayOnMobile {
+  display: none!important;
+}
+
+@media (max-width: 575px) { 
+  .displayOnMobile {
+    display: flex!important;
+  }
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
 }

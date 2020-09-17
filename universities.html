@@ -322,8 +322,7 @@
     <div  class="modal fade" id="universityDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">جامعة غازي</h5>
+          <div class="modal-header displayOnMobile">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -366,36 +365,29 @@
                                     <td>الانجليزية-التركية</td><th>لغات التدريس</th>
                                 </tr>
                             </tbody>
-                        </table><br>
-                        <div class="row justify-content-center buildings">
-                            <a class="content_link " href="#">
-                                <span class="icon">
-                                    <i class="fa fa-building" aria-hidden="true"></i>
-                                </span>
-                                <span class="title">الكليات</span>
-                            </a>
-                            <a class="content_link " href="#">
-                                <span class="icon">
-                                    <i class="fa fa-building-o" aria-hidden="true"></i>
-                                </span>
-                                <span class="title">المعاهد</span>
-                            </a>
-                        </div><br>
-                        <div class="row justify-content-center buildings">
-                            <a class="content_link " href="#">
-                                <span class="icon">
-                                    <i class="fa fa-building" aria-hidden="true"></i>
-                                </span>
-                                <span class="title">الجامعات التي تقبل بيوس هذه الجامعة</span>
-                            </a>
-                            <a class="content_link " href="#">
-                                <span class="icon">
-                                    <i class="fa fa-building-o" aria-hidden="true"></i>
-                                </span>
-                                <span class="title">اليوسات التي تقبل بها هذه الجامعة</span>
-                            </a>
-                        </div><br>
-
+                        </table>
+                        <div class="row buildings">
+                            <div class="col-6">
+                                <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                                    <span class="button_label">الكليات</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                                    <span class="button_label">المعاهد</span>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                                    <span class="button_label">الجامعات التي تقبل بيوس هذه الجامعة</span>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="button button_black button_size_2 button_js  margin5" href="#">   
+                                    <span class="button_label">اليوسات التي تقبل بها هذه الجامعة</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-8 order-lg-1">
                         <div class="jq-tabs tabs_wrapper tabs_horizontal ui-tabs ui-widget ui-widget-content ui-corner-all">
@@ -874,8 +866,7 @@
     <div  class="modal fade" id="relatedUniversityDetail" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">الكليات</h5>
+          <div class="modal-header displayOnMobile">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
