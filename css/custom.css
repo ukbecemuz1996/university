@@ -105,6 +105,7 @@ a.button .buttonIconColorRed i{
 
 body { 
   background: linear-gradient(321deg, rgba(255,0,0,1) 23%, rgba(39,186,176,1) 82%);
+  padding-right: 0 !important
 }
 
 
