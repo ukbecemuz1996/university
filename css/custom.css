@@ -71,7 +71,6 @@ a.button .buttonIconColorRed i{
 }
 
 .universityBackground{
-	/*background-image: url(../images/university.jpg);*/
 	background : inherit;
 }
 
@@ -104,8 +103,8 @@ a.button .buttonIconColorRed i{
 }
 
 body { 
-  background: linear-gradient(321deg, rgba(255,0,0,1) 23%, rgba(39,186,176,1) 82%);
-  padding-right: 0 !important
+background: linear-gradient(159deg, rgba(49,215,215,1) 2%, rgba(255,255,255,1) 45%);
+  padding-right: 0 !important;
 }
 
 
@@ -219,6 +218,12 @@ a.socialIcon:hover {
 
 div.socialIcons img {
   width: 40px;
+  transition: all .2s ease-in-out;
+}
+
+div.socialIcons img:hover {
+  width: 40px;
+  transform: scale(1.2);
 }
 
 i.iconBlue {
@@ -334,7 +339,7 @@ div.search-box{
   /*border-style:solid;
   border-width: 5px;
   border-color: red;*/ 
-  border: 10px solid rgba(255, 255, 255, 0.16);
+  /*border: 10px solid rgba(255, 255, 255, 0.16);*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -364,9 +369,10 @@ div.search-box .input-form {
   position: relative;
   border-radius: 50px;
   overflow: hidden;
-  border-style:solid;
+  /*border-style:solid;
   border-width: 1px;
-  border-color: red; 
+  border-color: red;*/
+  box-shadow: 0 0 20px #fe8a39; 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -690,7 +696,7 @@ a.button.button_black{
 a.button.activeFilter {
   background-color: #fff;
   color: rgba(0,0,0,0.7);
-  box-shadow: 0 0 13px #fff!important;
+  box-shadow: 0 0 40px -10px black!important;
 }
 
 .noMargin {
@@ -757,7 +763,8 @@ div.universities div.filteredColumn div.icon_box {
   transition-property: box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  min-height: 300px;
+  /*min-height: 300px;*/
+  border-radius: 100px;
 }
 
 div.universities div.filteredColumn:hover div.icon_box {
@@ -816,10 +823,20 @@ div.featureColumn div.icon_box:hover a div.icon_wrapper {
   color: #fff;
 }
 
+div.contactForm input[type=text] {
+  width: inherit;
+  margin-right: 0;
+  box-shadow: 0 0 50px -10px grey;
+  border-radius: 100px;
+  border:none!important;
+  background-color: inherit!important;
+}
+
 div.contactForm input {
   width: inherit;
   margin-right: 0;
 }
+
 
 div.contactForm select {
   width: inherit;
@@ -959,9 +976,9 @@ div.exam_detail {
 }
 
 ul.exam_universities {
-  max-height: 400px;
+  max-height: 300px;
   overflow-x:hidden;
-  overflow-y:scroll;
+  overflow-y:visible;
 }
 
 ul.exam_universities img {
@@ -986,12 +1003,14 @@ ul.exam_universities::-webkit-scrollbar {
   width: 12px;               
 }
 ul.exam_universities::-webkit-scrollbar-track {
-  background: #000;        
+  background: #fff;        
 }
 ul.exam_universities::-webkit-scrollbar-thumb {
-  background-color: #fff;    
+  /*background-color: #fff;*/
+  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);    
   border-radius: 20px;      
-  border: 3px solid #000;  
+  /*border: 3px solid #000;*/
+  box-shadow: 0 0 11px  #fe8a39; 
 }
 
 .fixedTop {
@@ -1032,4 +1051,8 @@ div#relatedUniversityDetail td:hover a {
 
 .modal::-webkit-scrollbar {
   display: none;
+}
+
+div.exam_university_column {
+  margin-bottom: 40px;
 }
