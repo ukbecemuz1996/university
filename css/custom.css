@@ -719,6 +719,21 @@ div.universitiesFilter div.row a.button:hover {
   box-shadow: 0 0 11px #000; 
 }
 
+div.examsFilter {
+  font-family: Cairo;
+}
+
+div.examsFilter div.row a.button {
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+div.examsFilter div.row a.button:hover {
+  box-shadow: 0 0 11px #000; 
+}
+
 div#universityDetail {
   font-family: Cairo;
 }

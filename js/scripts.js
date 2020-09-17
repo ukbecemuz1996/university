@@ -2620,6 +2620,21 @@ jQuery(document).ready(function() {
     	}
     });
 
+    jQuery('div.examsFilter div.row a.button').on('click',function(){
+    	if (!jQuery(this).hasClass('activeFilter')) {
+    		if(!jQuery('div.examsFilter div.row a.activeFilter').length){
+    			jQuery(this).removeClass('button_black');
+    			jQuery(this).addClass('activeFilter');
+    		} else {
+    			var tempElement = jQuery('div.examsFilter div.row a.activeFilter');
+    			tempElement.removeClass('activeFilter');
+    			tempElement.addClass('button_black')
+    			jQuery(this).removeClass('button_black');
+    			jQuery(this).addClass('activeFilter');
+    		}
+    	}
+    });
+
     jQuery('div.universities div.row div.filteredColumn div.icon_box').on('click',function(){
     	jQuery('#universityDetail').modal();
     });
