@@ -180,6 +180,7 @@ background: linear-gradient(159deg, rgba(49,215,215,1) 2%, rgba(255,255,255,1) 4
 
 .nav-item {
 	border-radius: 50px;
+  transition: all .2s ease-in-out;
 }
 
 .nav-item:hover .nav-link {
@@ -190,10 +191,10 @@ background: linear-gradient(159deg, rgba(49,215,215,1) 2%, rgba(255,255,255,1) 4
 .nav-item:not(.myActive):hover {
 	background-color: rgba(255,255,255);
 	height: auto;
-    -ms-transform: scale(1.05); /* IE 9 */
-  	-webkit-transform: scale(1.05); /* Safari 3-8 */
-  	transform: scale(1.1);
-  	box-shadow: -2px 3px 8px #000;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.1);
+  box-shadow: -2px 3px 8px #000;
 }
 
 .myActive {
@@ -372,7 +373,7 @@ div.search-box .input-form {
   /*border-style:solid;
   border-width: 1px;
   border-color: red;*/
-  box-shadow: 0 0 20px #fe8a39; 
+  box-shadow: 0 0 20px red; 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -823,24 +824,23 @@ div.featureColumn div.icon_box:hover a div.icon_wrapper {
   color: #fff;
 }
 
-div.contactForm input[type=text] {
+div.contactForm input[type=text],div.contactForm input[type=date], div.contactForm select {
   width: inherit;
   margin-right: 0;
   box-shadow: 0 0 50px -10px grey;
   border-radius: 100px;
   border:none!important;
   background-color: inherit!important;
+  font-family: Cairo;
+  font-size: 20px;
 }
 
 div.contactForm input {
   width: inherit;
   margin-right: 0;
+  border-radius: 100px;
 }
 
-
-div.contactForm select {
-  width: inherit;
-}
 
 div.contactForm input::placeholder {
   text-align: right;
@@ -888,6 +888,7 @@ div.about_us div.row div.logo img {
 
 .get_in_touch {
   background-color: #000!important;
+  box-shadow: 0 0 20px #000;
   border-radius: 20px;
 }
 
@@ -914,6 +915,7 @@ div.online a div.icon_wrapper:before {
 
 div.about_us_infobox_wrapper div.infobox {
   background-color: #000;
+  box-shadow: 0 0 20px #000;
   border-radius: 20px;
 }
 
@@ -973,6 +975,7 @@ div.exam_detail {
   font-family: Cairo;
   text-align: justify;
   border-radius: 20px;
+  box-shadow: 0 0 30px #000;
 }
 
 ul.exam_universities {
